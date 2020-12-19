@@ -21,6 +21,7 @@
 
   <!--Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/questions.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,134 +72,66 @@
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container-fluid mt-sm-5 my-1">
-                  <div class="question ml-sm-5 pl-sm-5 pt-2">
-                    <div class="py-2 h3"><b>Q. which option best describes your job role?</b></div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn1
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn2
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn3
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn4
-                      </label>
-                    </div>
-                  </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
-                        <div  id="next" class="ml-auto" > <button class="btn btn-success">Next</button> </div>
-                    </div>
+    <br>
+      <div class="container-fluid questionform">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2 id="heading">Detector</h2>
+                    <p>Fill all form field to go to next step</p>
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"><strong>Level-1</strong></li>
+                            <li id="confirm"><strong>Submit</strong></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> <br> <!-- fieldsets -->
+                      
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Personal Information:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 4</h2>
+                                    </div>
+      <!--ADD ALL YOUR QUESTIONS HEREEEEEE !!!!!!!!!!!!! HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE-->
+                                </div> <label class="fieldlabels">Add your question here</label> <input type="text" name="fname" placeholder="Replace this with your options" />
+                            </div> 
+      <!--HEHEHEHHEHEHEHEHHEHEHEHHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEH-->                      
+                            <input type="button" name="next" class="next action-button" value="submit" />
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Finish:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 4 - 4</h2>
+                                    </div>
+                                </div> <br><br>
+                                <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                                </div> <br><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">You Have Successfully Completed</h5>
+                                        <h5><a href="output.html">Click here to check your results</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container-fluid mt-sm-5 my-1">
-                    <div class="question ml-sm-5 pl-sm-5 pt-2">
-                        <div class="py-2 h3"><b>Q. which option best describes your job role?</b></div>
-                        <div class="form-check">
-                          <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label h2" for="exampleRadios1">
-                            optn1
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label h2" for="exampleRadios1">
-                            optn2
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label h2" for="exampleRadios1">
-                            optn3
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label h2" for="exampleRadios1">
-                            optn4
-                          </label>
-                        </div>
-                      </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
-                        <div  id="next" class="ml-auto"> <button class="btn btn-success">Next</button> </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container-fluid mt-sm-5 my-1">
-                  <div class="question ml-sm-5 pl-sm-5 pt-2">
-                    <div class="py-2 h3"><b>Q. which option best describes your job role?</b></div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn1
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn2
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn3
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  h2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label h2" for="exampleRadios1">
-                        optn4
-                      </label>
-                    </div>
-                  </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
-                    </div>
-                </div>
-              </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-      </div>
-      <br>
-      <div>
-        <a href="./output.html" class="d-flex justify-content-center"><button type="button" class="btn btn-danger">Submit</button></a>
-      </div>
+        </div>
+    
     </div>
   
   </section><!-- End Hero -->
@@ -242,8 +175,8 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/questions.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
